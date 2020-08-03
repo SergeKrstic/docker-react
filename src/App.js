@@ -7,9 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Hi there!</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -24,3 +22,12 @@ function App() {
 }
 
 export default App;
+
+// docker run -it -p 3000:3000 CONTAINER_ID
+// docker run -it -p 3000:3000 -v $(pwd):/app CONTAINER_ID
+// docker run -it -p 3000:3000 -v /app/node_modules -v $(pwd):/app CONTAINER_ID
+
+// docker run -it -p 3000:3000 fce8c8704226
+// docker run -it -p 3000:3000 -v $(pwd):/app fce8c8704226
+// docker run -it -p 3000:3000 -v $(pwd):/app fce8c8704226
+// docker run -it -p 3000:3000 -v /app/node_modules -v $(pwd):/app fce8c8704226
